@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Cwcpbm59PJDFRzQTTQNGoqDM9rS6yNhb7aNWAH74bPAVVCv9ay+q51ccPcvi1W/5wh0nbBEy76H505H0hU/jA==",
+  "dgSpecHash": "esG4WnWaJErxzA8RZY65XARCCx4xj632gPr92vP7MfWMKHX+PffSl2bGYoUBc6PHayKMom61qcTvbvwgIwg+Qg==",
   "success": true,
-  "projectFilePath": "E:\\Book Store\\BookApp\\BookA\\BookA\\BookA.csproj",
+  "projectFilePath": "E:\\Book Store\\BookApp\\BookStore\\BookA\\BookA\\BookA.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

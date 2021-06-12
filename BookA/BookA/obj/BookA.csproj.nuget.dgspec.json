@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Book Store\\BookApp\\BookA\\BookA\\BookA.csproj": {}
+    "E:\\Book Store\\BookApp\\BookStore\\BookA\\BookA\\BookA.csproj": {}
   },
   "projects": {
-    "E:\\Book Store\\BookApp\\BookA\\BookA\\BookA.csproj": {
+    "E:\\Book Store\\BookApp\\BookStore\\BookA\\BookA\\BookA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Book Store\\BookApp\\BookA\\BookA\\BookA.csproj",
+        "projectUniqueName": "E:\\Book Store\\BookApp\\BookStore\\BookA\\BookA\\BookA.csproj",
         "projectName": "BookA",
-        "projectPath": "E:\\Book Store\\BookApp\\BookA\\BookA\\BookA.csproj",
+        "projectPath": "E:\\Book Store\\BookApp\\BookStore\\BookA\\BookA\\BookA.csproj",
         "packagesPath": "C:\\Users\\usama\\.nuget\\packages\\",
-        "outputPath": "E:\\Book Store\\BookApp\\BookA\\BookA\\obj\\",
+        "outputPath": "E:\\Book Store\\BookApp\\BookStore\\BookA\\BookA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usama\\AppData\\Roaming\\NuGet\\NuGet.Config",
