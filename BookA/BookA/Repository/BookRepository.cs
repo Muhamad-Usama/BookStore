@@ -24,9 +24,11 @@ namespace BookA.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel(){id=1,Title="MVC",Author="Nitish"},
-                new BookModel(){id=2,Title="Hi",Author="Usama"},
-                new BookModel(){id=3,Title="Ego",Author="Ali"},
+                new BookModel(){id=1,Title="MVC",Author="Nitish",Description="This is a Book of MVC for beginners",Language="English",Total_Pages="1254",Category="Programming"},
+                new BookModel(){id=2,Title="Hi",Author="Usama", Description="This is a book for just chill purpose",Language="English",Total_Pages="527",Category="Fun"},
+                new BookModel(){id=3,Title="Ego",Author="Ali",Description="This is Great Book of Ego Control you must read this book!",Language="English",Total_Pages="927",Category="Motivation"},
+                new BookModel(){id=4,Title="C# for Beginners",Author="Bilal",Description="This is a Book of C# for beginners",Language="English",Total_Pages="891",Category="Programming"},
+                new BookModel(){id=5,Title="Jacob Ranodsy",Author="Ahmad",Description="This is a Book based on lisfe history",Language="English",Total_Pages="894",Category="History"},
             };
         }
     }

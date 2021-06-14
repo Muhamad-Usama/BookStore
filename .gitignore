@@ -1,0 +1,12 @@
+
+*.js
+BookA/BookA/obj/project.nuget.cache
+BookA/BookA/obj/project.nuget.cache
+BookA/BookA/obj/project.assets.json
+BookA/BookA/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+*.dll
+*.pdb
+*.pdb
+*.dll
+*.cache
+BookA/.vs/BookA/v16/.suo

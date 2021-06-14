@@ -1,0 +1,48 @@
+﻿@model IEnumerable<BookA.Models.BookModel>
+@{
+    ViewData["Title"] = "GetAllBooks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>BookStore Application</h1>
+        <p class="lead tex-muted">
+            Welcome to my bookstore application. In this home page you just see all books that we have in this application. you can easily select and order any book with your confidential details. thanks for visiting my application
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Search Book</a>
+        </p>
+    </div>
+</section>
+<div class="container">
+    <h3 class="display-4">All books</h3>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <h3 class="card-title">@item.Title</h3>
+                            <p class="card-text">
+                                @item.Description
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="/book/GetByid/@item.id" class="btn btn-sm btn-outline-secondary">View Details</a>
+                                </div>
+                                <small class="tex-muted">@item.Author</small>
+                            </div>
+                        </div>
+                    </svg>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+

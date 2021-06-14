@@ -17,6 +17,7 @@ namespace BookA
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +35,7 @@ namespace BookA
             //        await next();
             //        await context.Response.WriteAsync("Hello from 3rd middleware");
             //    });
+            app.UseStaticFiles();
 
             app.UseRouting();
 

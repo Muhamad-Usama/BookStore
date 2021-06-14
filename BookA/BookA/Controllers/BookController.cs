@@ -19,13 +19,15 @@ namespace BookA.Controllers
         //{
         //    return View();
         //}
-        public List<BookModel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return _reps.GetAllBooks();
+            var data= _reps.GetAllBooks();
+            return View(data);
         }
-        public BookModel GetByid(int id)
+        public ViewResult GetByid(int id)
         {
-            return _reps.GetBookById(id);
+            var data= _reps.GetBookById(id);
+            return View(data);
         }
         public List<BookModel> GetSearch(string bookname,string athorn)
         {
