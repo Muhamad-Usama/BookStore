@@ -10,3 +10,9 @@ BookA/BookA/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 *.dll
 *.cache
 BookA/.vs/BookA/v16/.suo
+*.cache
+*.pdb
+*.dll
+*.txt
+*.dll
+BookA/.vs/BookA/v16/.suo

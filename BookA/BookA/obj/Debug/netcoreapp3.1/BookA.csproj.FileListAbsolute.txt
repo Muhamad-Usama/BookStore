@@ -393,3 +393,5 @@ E:\Book Store\BookApp\BookStore\BookA\BookA\bin\Debug\netcoreapp3.1\Microsoft.As
 E:\Book Store\BookApp\BookStore\BookA\BookA\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 E:\Book Store\BookApp\BookStore\BookA\BookA\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 E:\Book Store\BookApp\BookStore\BookA\BookA\obj\Debug\netcoreapp3.1\BookA.MvcApplicationPartsAssemblyInfo.cs
+E:\Book Store\BookApp\BookStore\BookA\BookA\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Book Store\BookApp\BookStore\BookA\BookA\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
