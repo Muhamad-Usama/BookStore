@@ -19,11 +19,13 @@ namespace BookA.Controllers
         //{
         //    return View();
         //}
+        
         public ViewResult GetAllBooks()
         {
             var data= _reps.GetAllBooks();
             return View(data);
         }
+        [Route("Book-Details/{id}",Name ="BookdetailsRoute")]
         public ViewResult GetByid(int id)
         {
             var data= _reps.GetBookById(id);
@@ -32,6 +34,15 @@ namespace BookA.Controllers
         public List<BookModel> GetSearch(string bookname,string athorn)
         {
             return _reps.SearchBook(bookname, athorn);
+        }
+        public ViewResult AddNewBook()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ViewResult AddNewBook(BookModel book)
+        {
+            return View();
         }
     }
 }
