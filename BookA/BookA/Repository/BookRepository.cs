@@ -1,4 +1,5 @@
-﻿using BookA.Models;
+﻿using BookA.Data;
+using BookA.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,27 @@ namespace BookA.Repository
 {
     public class BookRepository
     {
+        private readonly BookStoreContext _context = null;
+        public BookRepository(BookStoreContext context)
+        {
+            _context = context;
+        }
+        public async Task<int> AddNewBook(BookModel model)
+        {
+            var newBook = new Books()
+            {
+                Author = model.Author,
+                Category=model.Category,
+                Description=model.Description,
+                Language=model.Language,
+                Title=model.Title,
+                Total_Pages=model.Total_Pages,
+                Tags=model.Tags
+            };
+            await _context.Books.AddAsync(newBook);
+            await _context.SaveChangesAsync();
+            return newBook.id;
+        }
         public List<BookModel> GetAllBooks()
         {
             return DataSource();

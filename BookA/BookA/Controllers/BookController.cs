@@ -11,9 +11,9 @@ namespace BookA.Controllers
     public class BookController : Controller
     {
         private readonly BookRepository _reps = null;
-            public BookController()
+            public BookController(BookRepository repository)
         {
-            _reps = new BookRepository();
+            _reps = repository;
         }
         //public IActionResult Index()
         //{
@@ -35,13 +35,20 @@ namespace BookA.Controllers
         {
             return _reps.SearchBook(bookname, athorn);
         }
-        public ViewResult AddNewBook()
+        public ViewResult AddNewBook(bool Issuccess=false)
         {
+            ViewBag.issuccess = Issuccess;
             return View();
         }
         [HttpPost]
-        public ViewResult AddNewBook(BookModel book)
+        public async Task<IActionResult> AddNewBook(BookModel book)
         {
+            int id = await _reps.AddNewBook(book);
+            if(id>0)
+            {
+                return RedirectToAction(nameof(AddNewBook),new { Issuccess =true});
+            }
+            
             return View();
         }
     }

@@ -425,3 +425,4 @@ E:\Book Store\BookApp\BookStore\BookA\BookA\bin\Debug\netcoreapp3.1\runtimes\win
 E:\Book Store\BookApp\BookStore\BookA\BookA\obj\Debug\netcoreapp3.1\Razor\Views\Book\AddNewBook.cshtml.g.cs
 E:\Book Store\BookApp\BookStore\BookA\BookA\bin\Debug\netcoreapp3.1\Humanizer.dll
 E:\Book Store\BookApp\BookStore\BookA\BookA\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\Book Store\BookApp\BookStore\BookA\BookA\obj\Debug\netcoreapp3.1\Razor\Views\Student\AddStudent.cshtml.g.cs

@@ -14,5 +14,7 @@ namespace BookA.Data
         public string Category { get; set; }
         public string Total_Pages { get; set; }
         public string Language { get; set; }
+        public string Tags { get; set; }
+
     }
 }

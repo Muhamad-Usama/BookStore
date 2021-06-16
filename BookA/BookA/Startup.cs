@@ -1,4 +1,5 @@
 using BookA.Data;
+using BookA.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +21,12 @@ namespace BookA
         {
             services.AddMvc();
             services.AddRazorPages().AddRazorRuntimeCompilation();
+            //services.AddDbContext<BookSpec>(options => options.UseSqlServer());
             services.AddDbContext<BookStoreContext>(options => options.UseSqlServer());
+            
+            services.AddScoped<BookRepository, BookRepository>();
+            services.AddScoped<StudentRepository, StudentRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
